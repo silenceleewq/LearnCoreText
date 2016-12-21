@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0079B9D31E0AC19400B1C7BC /* CTFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079B9D21E0AC19400B1C7BC /* CTFrameParserConfig.m */; };
+		0079B9D61E0AC41900B1C7BC /* CTFrameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079B9D51E0AC41900B1C7BC /* CTFrameParser.m */; };
+		0079B9D91E0AC43300B1C7BC /* CoreTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079B9D81E0AC43300B1C7BC /* CoreTextData.m */; };
 		73AB1D411E096CC400707A47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AB1D401E096CC400707A47 /* main.m */; };
 		73AB1D441E096CC400707A47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AB1D431E096CC400707A47 /* AppDelegate.m */; };
 		73AB1D471E096CC400707A47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AB1D461E096CC400707A47 /* ViewController.m */; };
@@ -21,6 +23,10 @@
 /* Begin PBXFileReference section */
 		0079B9D11E0AC19400B1C7BC /* CTFrameParserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFrameParserConfig.h; sourceTree = "<group>"; };
 		0079B9D21E0AC19400B1C7BC /* CTFrameParserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFrameParserConfig.m; sourceTree = "<group>"; };
+		0079B9D41E0AC41900B1C7BC /* CTFrameParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFrameParser.h; sourceTree = "<group>"; };
+		0079B9D51E0AC41900B1C7BC /* CTFrameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFrameParser.m; sourceTree = "<group>"; };
+		0079B9D71E0AC43300B1C7BC /* CoreTextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextData.h; sourceTree = "<group>"; };
+		0079B9D81E0AC43300B1C7BC /* CoreTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextData.m; sourceTree = "<group>"; };
 		73AB1D3C1E096CC400707A47 /* CoreTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AB1D401E096CC400707A47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73AB1D421E096CC400707A47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +60,10 @@
 			children = (
 				0079B9D11E0AC19400B1C7BC /* CTFrameParserConfig.h */,
 				0079B9D21E0AC19400B1C7BC /* CTFrameParserConfig.m */,
+				0079B9D71E0AC43300B1C7BC /* CoreTextData.h */,
+				0079B9D81E0AC43300B1C7BC /* CoreTextData.m */,
+				0079B9D41E0AC41900B1C7BC /* CTFrameParser.h */,
+				0079B9D51E0AC41900B1C7BC /* CTFrameParser.m */,
 			);
 			path = CoreTextEngine;
 			sourceTree = "<group>";
@@ -177,10 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				73AB1D471E096CC400707A47 /* ViewController.m in Sources */,
+				0079B9D91E0AC43300B1C7BC /* CoreTextData.m in Sources */,
 				73AB1D441E096CC400707A47 /* AppDelegate.m in Sources */,
 				73AB1D5C1E0972E100707A47 /* UIView+frameAdjust.m in Sources */,
 				73AB1D581E096CFD00707A47 /* CTDisplayView.m in Sources */,
 				73AB1D411E096CC400707A47 /* main.m in Sources */,
+				0079B9D61E0AC41900B1C7BC /* CTFrameParser.m in Sources */,
 				0079B9D31E0AC19400B1C7BC /* CTFrameParserConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B5G9R9WR6W;
+				GCC_PREFIX_HEADER = ./PrefixHeader.pch;
 				INFOPLIST_FILE = CoreTextDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myOwn.CoreTextDemo;
@@ -312,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B5G9R9WR6W;
+				GCC_PREFIX_HEADER = ./PrefixHeader.pch;
 				INFOPLIST_FILE = CoreTextDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myOwn.CoreTextDemo;

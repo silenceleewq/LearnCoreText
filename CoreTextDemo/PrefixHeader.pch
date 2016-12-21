@@ -10,6 +10,7 @@
 #define PrefixHeader_pch
 
 #import "UIView+frameAdjust.h"
+#import <UIKit/UIKit.h>
 
 #ifdef DEBUG
     #define debugLog(...) NSLog(__VA_ARGS__)
