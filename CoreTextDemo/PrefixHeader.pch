@@ -9,6 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#import "UIView+frameAdjust.h"
+
 #ifdef DEBUG
     #define debugLog(...) NSLog(__VA_ARGS__)
     #define debugMethod() NSLog(@"%s", __func__)

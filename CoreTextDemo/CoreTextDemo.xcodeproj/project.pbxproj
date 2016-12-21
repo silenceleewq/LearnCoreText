@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0079B9D31E0AC19400B1C7BC /* CTFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079B9D21E0AC19400B1C7BC /* CTFrameParserConfig.m */; };
 		73AB1D411E096CC400707A47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AB1D401E096CC400707A47 /* main.m */; };
 		73AB1D441E096CC400707A47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AB1D431E096CC400707A47 /* AppDelegate.m */; };
 		73AB1D471E096CC400707A47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AB1D461E096CC400707A47 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0079B9D11E0AC19400B1C7BC /* CTFrameParserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFrameParserConfig.h; sourceTree = "<group>"; };
+		0079B9D21E0AC19400B1C7BC /* CTFrameParserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFrameParserConfig.m; sourceTree = "<group>"; };
 		73AB1D3C1E096CC400707A47 /* CoreTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AB1D401E096CC400707A47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73AB1D421E096CC400707A47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0079B9D01E0AC11D00B1C7BC /* CoreTextEngine */ = {
+			isa = PBXGroup;
+			children = (
+				0079B9D11E0AC19400B1C7BC /* CTFrameParserConfig.h */,
+				0079B9D21E0AC19400B1C7BC /* CTFrameParserConfig.m */,
+			);
+			path = CoreTextEngine;
+			sourceTree = "<group>";
+		};
 		73AB1D331E096CC400707A47 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +82,7 @@
 		73AB1D3E1E096CC400707A47 /* CoreTextDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0079B9D01E0AC11D00B1C7BC /* CoreTextEngine */,
 				73AB1D421E096CC400707A47 /* AppDelegate.h */,
 				73AB1D431E096CC400707A47 /* AppDelegate.m */,
 				73AB1D451E096CC400707A47 /* ViewController.h */,
@@ -168,6 +181,7 @@
 				73AB1D5C1E0972E100707A47 /* UIView+frameAdjust.m in Sources */,
 				73AB1D581E096CFD00707A47 /* CTDisplayView.m in Sources */,
 				73AB1D411E096CC400707A47 /* main.m in Sources */,
+				0079B9D31E0AC19400B1C7BC /* CTFrameParserConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +338,7 @@
 				73AB1D551E096CC400707A47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
